@@ -39,29 +39,35 @@ The skills are explicit-invocation only. A story should not silently change an o
 
 ## Install
 
-### Codex: repository scope
+Skills install into the host application, not into GPT, Claude, or DeepSeek model weights.
 
-PowerShell:
+The no-dependency installer works on Windows, macOS, and Linux.
 
-    New-Item -ItemType Directory -Force .agents\skills | Out-Null
-    Copy-Item -Recurse .\skills\mother-goose .agents\skills\mother-goose
+Install the complete collection for every Codex project:
 
-Bash:
+    python scripts/install.py --host codex --scope user
 
-    mkdir -p .agents/skills
-    cp -R skills/mother-goose .agents/skills/mother-goose
+Install only the router:
 
-To install the complete collection, copy every folder under skills into .agents/skills.
+    python scripts/install.py --host codex --scope user --skill mother-goose
 
-### Codex: user scope
+Install into one Codex project:
 
-Copy selected folders into HOME/.agents/skills to make them available across repositories.
+    python scripts/install.py --host codex --scope project --project PATH_TO_PROJECT
 
-### Other Agent Skills-compatible builders
+Install for every Claude Code project:
 
-Each folder is self-contained. Copy the selected skill folder into the builder's configured skills directory. Tools that do not scan skills can use SKILL.md as a system or project instruction.
+    python scripts/install.py --host claude-code --scope user
 
-The repository also contains a Codex plugin manifest so the complete collection can be distributed as one plugin bundle.
+Use a DeepSeek-powered or other Agent Skills-compatible host by naming the folder it scans:
+
+    python scripts/install.py --host custom --destination PATH_TO_SKILLS
+
+Add `--dry-run` to preview the copy. Existing skill folders are protected unless `--force` is explicit. Run `python scripts/install.py --list` to see the names available for selective installation.
+
+Once this repository is public, Codex users can also ask `$skill-installer` to install skills from `https://github.com/jawsublime-byte/mother-goose`.
+
+The included `.codex-plugin/plugin.json` packages the complete collection for ChatGPT Work, the ChatGPT desktop app, and Codex plugin distribution. A local filesystem installer cannot inject a plugin into hosted ChatGPT; use that product's plugin installation flow after publication.
 
 ## Boundaries
 
