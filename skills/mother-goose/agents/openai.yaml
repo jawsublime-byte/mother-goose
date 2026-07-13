@@ -1,0 +1,7 @@
+interface:
+  display_name: "Mother Goose"
+  short_description: "Route a problem to the right story-based skill."
+  default_prompt: "Use $mother-goose to choose the right story-based skill for this problem."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Hickory Dickory Dock"
+  short_description: "Stop long work sessions for a timed break."
+  default_prompt: "Use $hickory-dickory-dock to enforce an hourly five-minute break."
+
+policy:
+  allow_implicit_invocation: false

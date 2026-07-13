@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ring Around the Rosie"
+  short_description: "Eliminate the weakest option one round at a time."
+  default_prompt: "Use $ring-around-the-rosie to eliminate the weakest option each round."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,32 @@
+[
+  {
+    "skill": "mother-goose",
+    "should_trigger": ["$mother-goose route this repeatedly failed repair"],
+    "should_not_trigger": ["Execute every story skill"]
+  },
+  {
+    "skill": "ring-around-the-rosie",
+    "should_trigger": ["$ring-around-the-rosie eliminate the weakest candidate each round"],
+    "should_not_trigger": ["Remove three options at once without criteria"]
+  },
+  {
+    "skill": "humpty-dumpty",
+    "should_trigger": ["$humpty-dumpty replace this strategy after two reproduced failures"],
+    "should_not_trigger": ["Repeat the same failed patch indefinitely"]
+  },
+  {
+    "skill": "hickory-dickory-dock",
+    "should_trigger": ["$hickory-dickory-dock enforce a five-minute break after one hour"],
+    "should_not_trigger": ["Pretend an hour elapsed without access to time"]
+  },
+  {
+    "skill": "three-little-pigs",
+    "should_trigger": ["$three-little-pigs test this service at straw, sticks, and bricks levels"],
+    "should_not_trigger": ["Run destructive tests against production"]
+  },
+  {
+    "skill": "goldilocks",
+    "should_trigger": ["$goldilocks calculate the median safe setting from these values"],
+    "should_not_trigger": ["Call an arbitrary preference the exact median"]
+  }
+]

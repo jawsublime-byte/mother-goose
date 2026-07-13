@@ -1,0 +1,7 @@
+interface:
+  display_name: "Three Little Pigs"
+  short_description: "Test resilience at three escalating levels."
+  default_prompt: "Use $three-little-pigs to test this build at straw, sticks, and bricks levels."
+
+policy:
+  allow_implicit_invocation: false

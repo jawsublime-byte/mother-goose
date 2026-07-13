@@ -1,0 +1,7 @@
+interface:
+  display_name: "Goldilocks"
+  short_description: "Choose the balanced setting between extremes."
+  default_prompt: "Use $goldilocks to choose the balanced setting between these extremes."
+
+policy:
+  allow_implicit_invocation: false

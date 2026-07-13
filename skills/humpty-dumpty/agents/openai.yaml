@@ -1,0 +1,7 @@
+interface:
+  display_name: "Humpty Dumpty"
+  short_description: "Abandon a repeatedly failed repair and rebuild."
+  default_prompt: "Use $humpty-dumpty to replace this repeatedly failed repair strategy."
+
+policy:
+  allow_implicit_invocation: false
