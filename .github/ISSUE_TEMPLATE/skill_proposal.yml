@@ -1,0 +1,79 @@
+name: Skill proposal
+description: Propose a traditional-rhyme, tale, or fable metaphor for one recurring builder problem.
+title: "[Skill proposal]: "
+body:
+  - type: input
+    id: proposed_name
+    attributes:
+      label: Proposed skill name
+      placeholder: skill-name
+    validations:
+      required: true
+
+  - type: textarea
+    id: builder_problem
+    attributes:
+      label: Recurring builder problem
+      description: Describe one problem this skill will solve repeatedly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: metaphor
+    attributes:
+      label: Lesson-to-problem mapping
+      description: Explain why the traditional lesson naturally matches the builder problem without copying story text, illustrations, or branding.
+    validations:
+      required: true
+
+  - type: textarea
+    id: procedure
+    attributes:
+      label: Bounded procedure
+      description: List the exact process the agent should follow.
+    validations:
+      required: true
+
+  - type: textarea
+    id: completion
+    attributes:
+      label: Checkable completion condition
+      description: State the observable condition that proves the skill is finished.
+    validations:
+      required: true
+
+  - type: textarea
+    id: safety
+    attributes:
+      label: Stop, safety, and approval conditions
+      description: Identify destructive actions, uncertainty, or boundaries that require a stop or user approval.
+    validations:
+      required: true
+
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Existing-skill overlap
+      description: Name the closest existing skill and explain the non-duplicative boundary.
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Trigger and non-trigger examples
+      placeholder: |
+        Must trigger:
+        Must not trigger:
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: originality
+    attributes:
+      label: Originality confirmation
+      options:
+        - label: The proposal contains original workflow language and no copied story text, artwork, characters, prompts, or branding.
+          required: true
+        - label: This proposal solves one bounded problem rather than creating a duplicate metaphor.
+          required: true

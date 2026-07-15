@@ -1,0 +1,90 @@
+name: Bug report
+description: Report a reproducible installation, invocation, routing, or behavior problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Include enough evidence to reproduce it, but remove all secrets and personal data.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: Which skill is affected?
+      placeholder: humpty-dumpty
+    validations:
+      required: true
+
+  - type: dropdown
+    id: host
+    attributes:
+      label: Host or tool
+      options:
+        - ChatGPT or Codex
+        - Claude or Claude Code
+        - Command Code
+        - Cursor or Windsurf
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Model and version
+      placeholder: Codex with GPT-5.x, DeepSeek v4 Pro, Claude 4.x
+    validations:
+      required: true
+
+  - type: textarea
+    id: invocation
+    attributes:
+      label: Exact invocation
+      description: Provide the command or request that triggered the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: List the smallest repeatable sequence that demonstrates the problem.
+      placeholder: |
+        1. Install...
+        2. Invoke...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence
+      description: Add relevant output, logs, or screenshots after removing secrets and personal data.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I removed credentials, tokens, private paths, and personal information.
+          required: true
+        - label: I can reproduce this problem using the steps above.
+          required: true

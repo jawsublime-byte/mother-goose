@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/mother-goose-hero.jpg" alt="Mother Goose sleeps while familiar nursery-tale disasters unfold around her" width="100%">
+</p>
+
 # Mother Goose
 
 Old stories for recurring builder problems.
@@ -14,6 +18,10 @@ Example:
 
     $mother-goose route this repair that has failed three times
 
+<p align="center">
+  <img src="assets/mother-goose-repair.jpg" alt="Humpty Dumpty falls above old Humpty grave markers while children circle nearby" width="80%">
+</p>
+
 ## Skill catalog
 
 | Skill | Story rule | Builder problem | Enforced behavior |
@@ -24,6 +32,10 @@ Example:
 | [Hickory Dickory Dock](skills/hickory-dickory-dock/) | The clock controls the stop | Unhealthy long sessions | Checkpoint at one hour and require a five-minute break |
 | [Three Little Pigs](skills/three-little-pigs/) | Straw, sticks, then bricks | Untested resilience | Test three escalating failure or threat levels |
 | [Goldilocks](skills/goldilocks/) | Too much, too little, just right | Bad configuration balance | Calculate the median or justify the bounded middle choice |
+
+<p align="center">
+  <img src="assets/mother-goose-resilience.jpg" alt="The Three Little Pigs face an approaching wolf beneath a midnight clock" width="76%">
+</p>
 
 ## Use
 
@@ -79,6 +91,10 @@ The included `.codex-plugin/plugin.json` packages the complete collection for Ch
 
 All skills yield to higher-level safety rules, repository policy, permission limits, and explicit approval gates.
 
+<p align="center">
+  <img src="assets/mother-goose-balance.jpg" alt="Goldilocks is discovered at the table by the Three Bears" width="76%">
+</p>
+
 ## Validate
 
 Run:
@@ -89,8 +105,19 @@ Run:
 
 Read CONTRIBUTING.md before proposing a rhyme or tale. The moral must translate naturally into one repeated builder problem and a testable procedure.
 
+## From the builder
+
+Created by Joe, an online English teacher building practical, local-first tools for safer and more predictable AI-assisted work.
+
+On the workbench:
+
+- **Echoes** — local-first archive archaeology, project reconstruction, and timeline recovery.
+- **The MCP Workshop Manual** — a field-repair reference for diagnosing and repairing MCP infrastructure.
+
+Projects will be linked here only when they are ready for public testing or release.
+
 ## License
 
 MIT. See LICENSE.
 
-The names in this collection refer to traditional stories and nursery rhymes in the public cultural tradition.
+See [NOTICE.md](NOTICE.md) for the independent-project and third-party mark notice.
