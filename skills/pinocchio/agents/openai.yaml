@@ -1,0 +1,7 @@
+interface:
+  display_name: "Pinocchio"
+  short_description: "Make every important claim show its evidence."
+  default_prompt: "Use $pinocchio to audit these completion claims against actual evidence."
+
+policy:
+  allow_implicit_invocation: false

@@ -15,7 +15,17 @@ Choose the tale whose lesson matches the problem. One problem receives one leadi
    - humpty-dumpty: stop repeating a repair strategy after its failure budget is exhausted;
    - hickory-dickory-dock: checkpoint work and enforce a five-minute break at one hour;
    - three-little-pigs: test resilience at straw, sticks, and bricks levels;
-   - goldilocks: calculate or justify the bounded middle setting.
+   - goldilocks: calculate or justify the bounded middle setting;
+   - emperor-new-clothes: independently verify a result without inheriting earlier PASS labels or consensus;
+   - old-lady-swallowed-fly: stop cascading workarounds and trace the repair chain back to the earliest verified cause;
+   - sorcerers-apprentice: put hard scope, budget, stop, override, and cleanup controls around automation;
+   - pinocchio: require evidence for concrete build, test, compatibility, performance, and completion claims;
+   - boy-who-cried-wolf: separate real warnings from duplicate, unsupported, or false alarms without hiding fresh critical evidence;
+   - goose-golden-eggs: protect proven valuable behavior before optimizing or refactoring the component that produces it;
+   - five-little-monkeys: stop identical blind retries after the same failure signature exhausts its retry budget;
+   - hansel-and-gretel: leave recoverable operational breadcrumbs through a long or multi-agent build;
+   - tortoise-and-hare: make verified completion outrank raw speed when comparing work;
+   - little-red-hen: trace significant work, supplied evidence, and verification to the actor or source that actually performed it.
 3. Explain the lesson-to-problem match in one sentence.
 4. Do not execute the routed skill unless the user requested execution or confirms the route.
 

@@ -1,0 +1,7 @@
+interface:
+  display_name: "The Boy Who Cried Wolf"
+  short_description: "Separate real warnings from repeated false alarms."
+  default_prompt: "Use $boy-who-cried-wolf to calibrate these repeated alerts without hiding real risk."
+
+policy:
+  allow_implicit_invocation: false

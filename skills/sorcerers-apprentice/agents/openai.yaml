@@ -1,0 +1,7 @@
+interface:
+  display_name: "The Sorcerer's Apprentice"
+  short_description: "Bound automation before the brooms get away."
+  default_prompt: "Use $sorcerers-apprentice to put hard limits and stop conditions around this automation."
+
+policy:
+  allow_implicit_invocation: false

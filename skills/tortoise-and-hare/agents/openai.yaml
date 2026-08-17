@@ -1,0 +1,7 @@
+interface:
+  display_name: "The Tortoise and the Hare"
+  short_description: "Make verified completion outrank raw speed."
+  default_prompt: "Use $tortoise-and-hare to compare these results against the same finish line before ranking speed."
+
+policy:
+  allow_implicit_invocation: false

@@ -28,5 +28,55 @@
     "skill": "goldilocks",
     "should_trigger": ["$goldilocks calculate the median safe setting from these values"],
     "should_not_trigger": ["Call an arbitrary preference the exact median"]
+  },
+  {
+    "skill": "emperor-new-clothes",
+    "should_trigger": ["$emperor-new-clothes independently verify this PASS from direct evidence"],
+    "should_not_trigger": ["Accept the previous three reviewers' PASS labels as proof"]
+  },
+  {
+    "skill": "old-lady-swallowed-fly",
+    "should_trigger": ["$old-lady-swallowed-fly trace these cascading workarounds back to the original defect"],
+    "should_not_trigger": ["Add another workaround without identifying what caused the cascade"]
+  },
+  {
+    "skill": "sorcerers-apprentice",
+    "should_trigger": ["$sorcerers-apprentice bound this agent loop with budgets, stop conditions, rollback, and a human override"],
+    "should_not_trigger": ["Start an unbounded autonomous loop with no reliable stop"]
+  },
+  {
+    "skill": "pinocchio",
+    "should_trigger": ["$pinocchio verify every completion claim against actual evidence"],
+    "should_not_trigger": ["Treat a confident summary as proof that the tests ran"]
+  },
+  {
+    "skill": "boy-who-cried-wolf",
+    "should_trigger": ["$boy-who-cried-wolf classify these repeated verifier warnings and keep real critical evidence visible"],
+    "should_not_trigger": ["Suppress a fresh critical warning because similar old alerts were false"]
+  },
+  {
+    "skill": "goose-golden-eggs",
+    "should_trigger": ["$goose-golden-eggs protect this proven behavior while we optimize the implementation"],
+    "should_not_trigger": ["Replace a working subsystem because the new version looks cleaner without measuring preserved value"]
+  },
+  {
+    "skill": "five-little-monkeys",
+    "should_trigger": ["$five-little-monkeys stop this identical retry loop after the same reproduced failure"],
+    "should_not_trigger": ["Run the same command again under unchanged conditions after the retry budget is exhausted"]
+  },
+  {
+    "skill": "hansel-and-gretel",
+    "should_trigger": ["$hansel-and-gretel leave a recoverable checkpoint trail for this multi-agent build"],
+    "should_not_trigger": ["Store secrets or hidden chain-of-thought in the breadcrumb log"]
+  },
+  {
+    "skill": "tortoise-and-hare",
+    "should_trigger": ["$tortoise-and-hare compare these builders against the same finish line before ranking speed"],
+    "should_not_trigger": ["Declare the fastest partial build the winner over a complete passing build"]
+  },
+  {
+    "skill": "little-red-hen",
+    "should_trigger": ["$little-red-hen trace who actually built, supplied, and verified each artifact"],
+    "should_not_trigger": ["Credit the final summarizer for work performed by earlier agents"]
   }
 ]

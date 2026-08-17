@@ -1,0 +1,7 @@
+interface:
+  display_name: "The Little Red Hen"
+  short_description: "Track who actually did, supplied, and verified the work."
+  default_prompt: "Use $little-red-hen to build a provenance ledger for this multi-agent work."
+
+policy:
+  allow_implicit_invocation: false

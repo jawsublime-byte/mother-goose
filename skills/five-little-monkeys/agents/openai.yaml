@@ -1,0 +1,7 @@
+interface:
+  display_name: "Five Little Monkeys"
+  short_description: "Stop retrying the same failure under the same conditions."
+  default_prompt: "Use $five-little-monkeys to stop this identical retry loop and require a changed condition."
+
+policy:
+  allow_implicit_invocation: false

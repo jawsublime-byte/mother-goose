@@ -1,0 +1,7 @@
+interface:
+  display_name: "Old Lady Who Swallowed a Fly"
+  short_description: "Stop cascading fixes and find the original cause."
+  default_prompt: "Use $old-lady-swallowed-fly to trace this workaround chain back to the original defect."
+
+policy:
+  allow_implicit_invocation: false

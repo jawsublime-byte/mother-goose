@@ -1,0 +1,7 @@
+interface:
+  display_name: "Hansel and Gretel"
+  short_description: "Leave recoverable breadcrumbs through long builds."
+  default_prompt: "Use $hansel-and-gretel to leave a recoverable checkpoint trail for this build."
+
+policy:
+  allow_implicit_invocation: false

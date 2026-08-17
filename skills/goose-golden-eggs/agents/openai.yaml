@@ -1,0 +1,7 @@
+interface:
+  display_name: "The Goose That Laid the Golden Eggs"
+  short_description: "Protect proven value before optimizing it."
+  default_prompt: "Use $goose-golden-eggs to protect the known-good behavior through this refactor."
+
+policy:
+  allow_implicit_invocation: false
