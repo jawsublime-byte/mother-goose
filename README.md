@@ -57,9 +57,9 @@ Because "pick something reasonable" is vague.
 
 **Goldilocks** is not vague: identify too much, too little, and the bounded middle choice, and justify why the middle is appropriate.
 
-Because "verify it yourself" is vague.
+Because "someone should challenge this" is vague.
 
-**The Emperor's New Clothes** is not vague: ignore inherited PASS labels and polished consensus, inspect the evidence directly, and say what is actually there.
+**The Emperor's New Clothes** is not vague: when consensus, rank, prior approval, or yes-man behavior may be suppressing an uncomfortable truth, create a protected dissenting review and require somebody to say plainly when the emperor is naked.
 
 Because "stop patching patches" is vague.
 
@@ -95,7 +95,7 @@ Example:
 | [Hickory Dickory Dock](skills/hickory-dickory-dock/) | The clock controls the stop | Unhealthy long sessions | Checkpoint at one hour and require a five-minute break |
 | [Three Little Pigs](skills/three-little-pigs/) | Straw, sticks, then bricks | Untested resilience | Test three escalating failure or threat levels |
 | [Goldilocks](skills/goldilocks/) | Too much, too little, just right | Bad configuration balance | Calculate the median or justify the bounded middle choice |
-| [The Emperor's New Clothes](skills/emperor-new-clothes/) | Consensus does not make the clothes real | Inherited false PASS | Verify independently from direct evidence |
+| [The Emperor's New Clothes](skills/emperor-new-clothes/) | If the emperor is naked, say so | Groupthink, sycophancy, authority bias, yes-men | Give dissent a protected evidence-based voice and state uncomfortable contradictions plainly |
 | [Old Lady Who Swallowed a Fly](skills/old-lady-swallowed-fly/) | Do not swallow a bigger fix to solve the last fix | Cascading workarounds | Trace the repair chain to the earliest verified cause |
 | [The Sorcerer's Apprentice](skills/sorcerers-apprentice/) | Do not start what you cannot stop | Unbounded automation | Require scope, budgets, stop conditions, override, and cleanup |
 | [Pinocchio](skills/pinocchio/) | A claim without evidence stays a story | Unsupported completion claims | Attach evidence to every material claim or label it unsupported |
@@ -168,6 +168,28 @@ Codex users can also ask `$skill-installer` to install skills from `https://gith
 
 The included `.codex-plugin/plugin.json` packages the complete collection for ChatGPT Work, the ChatGPT desktop app, and Codex plugin distribution. A local filesystem installer cannot inject a plugin into hosted ChatGPT; use that product's plugin installation flow after publication.
 
+## Add new skills without reinstalling the collection
+
+After you have `scripts/update_skills.py` once, future additions can be pulled directly from this public GitHub repository without downloading or reinstalling every existing skill.
+
+Check what is missing:
+
+    python scripts/update_skills.py --host codex --scope user
+
+Install **only** new skill folders that are not already present:
+
+    python scripts/update_skills.py --host codex --scope user --install-new
+
+When new add-ons are installed, the updater also refreshes the small `mother-goose` router so it knows the newly added stories. Existing non-router skills are left untouched.
+
+If a specific existing skill receives an improved definition, refresh only that skill:
+
+    python scripts/update_skills.py --host codex --scope user --refresh emperor-new-clothes
+
+Claude Code uses the same commands with `--host claude-code`. Custom hosts can use `--host custom --destination PATH_TO_SKILLS`.
+
+The updater uses only Python's standard library. It checks the GitHub `skills/` directory, compares it with the installed destination, downloads only missing or explicitly refreshed skill folders, and refuses to overwrite other installed skills. Set `GITHUB_TOKEN` only if you need a higher GitHub API rate limit; no token is required for normal public-repository use.
+
 ## Boundaries
 
 - Humpty Dumpty changes strategy, not requirements.
@@ -175,7 +197,7 @@ The included `.codex-plugin/plugin.json` packages the complete collection for Ch
 - Goldilocks distinguishes a mathematical median from a subjective compromise.
 - Hickory Dickory Dock does not pretend to monitor time when the host supplies no clock or continuing session.
 - Three Little Pigs remains inside authorized, non-destructive test scope.
-- The Emperor's New Clothes ignores inherited verdicts, not the actual acceptance criteria.
+- The Emperor's New Clothes protects truthful dissent without manufacturing disagreement or seizing decision authority from the owner.
 - The Old Lady does not remove compensating changes without checking what behavior they currently protect.
 - The Sorcerer's Apprentice never invents continuous monitoring, persistence, or a kill switch the host does not actually provide.
 - Pinocchio checks observable claims and receipts, not private chain-of-thought.
@@ -200,7 +222,7 @@ There is no paywall waiting behind the collection. Use the skills, fork them, ad
 
 I would like to know.
 
-If Humpty Dumpty finally broke a bad repair loop, the Emperor exposed a false PASS, Pinocchio caught an unsupported completion claim, Hansel and Gretel helped you recover a long build, Three Little Pigs exposed a weak boundary, or another skill proved useful, [open an issue and tell me what happened](https://github.com/jawsublime-byte/mother-goose/issues/new).
+If Humpty Dumpty finally broke a bad repair loop, the Emperor broke through a yes-man consensus, Pinocchio caught an unsupported completion claim, Hansel and Gretel helped you recover a long build, Three Little Pigs exposed a weak boundary, or another skill proved useful, [open an issue and tell me what happened](https://github.com/jawsublime-byte/mother-goose/issues/new).
 
 A few details are enough:
 

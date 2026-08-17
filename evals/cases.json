@@ -31,8 +31,8 @@
   },
   {
     "skill": "emperor-new-clothes",
-    "should_trigger": ["$emperor-new-clothes independently verify this PASS from direct evidence"],
-    "should_not_trigger": ["Accept the previous three reviewers' PASS labels as proof"]
+    "should_trigger": ["$emperor-new-clothes challenge this unanimous architecture decision and tell me if anyone is being a yes-man"],
+    "should_not_trigger": ["Invent a disagreement even though the direct evidence supports the consensus"]
   },
   {
     "skill": "old-lady-swallowed-fly",

@@ -1,7 +1,7 @@
 interface:
   display_name: "The Emperor's New Clothes"
-  short_description: "Verify independently instead of inheriting consensus."
-  default_prompt: "Use $emperor-new-clothes to verify this result from direct evidence only."
+  short_description: "Challenge yes-men, groupthink, and authority-biased consensus."
+  default_prompt: "Use $emperor-new-clothes to challenge this consensus and tell me plainly if the emperor is naked."
 
 policy:
   allow_implicit_invocation: false

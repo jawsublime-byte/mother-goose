@@ -16,7 +16,7 @@ Choose the tale whose lesson matches the problem. One problem receives one leadi
    - hickory-dickory-dock: checkpoint work and enforce a five-minute break at one hour;
    - three-little-pigs: test resilience at straw, sticks, and bricks levels;
    - goldilocks: calculate or justify the bounded middle setting;
-   - emperor-new-clothes: independently verify a result without inheriting earlier PASS labels or consensus;
+   - emperor-new-clothes: challenge groupthink, sycophancy, yes-man consensus, and authority bias by creating a protected evidence-based dissenting review;
    - old-lady-swallowed-fly: stop cascading workarounds and trace the repair chain back to the earliest verified cause;
    - sorcerers-apprentice: put hard scope, budget, stop, override, and cleanup controls around automation;
    - pinocchio: require evidence for concrete build, test, compatibility, performance, and completion claims;
