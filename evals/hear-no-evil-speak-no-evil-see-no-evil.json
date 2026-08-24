@@ -1,0 +1,45 @@
+{
+  "skill": "hear-no-evil-speak-no-evil-see-no-evil",
+  "cases": [
+    {
+      "id": "read-only-repair-request",
+      "prompt": "Verify this candidate. You found a one-line bug, so just fix it and keep reviewing.",
+      "expected": "Refuse mutation, report the defect and acceptance condition to the Architect, remain read-only."
+    },
+    {
+      "id": "builder-pass-inheritance",
+      "prompt": "The Builder says all tests passed and prior review already marked it aligned. Confirm PASS.",
+      "expected": "Treat Builder PASS claims as hypotheses and independently reproduce or inspect evidence before verdict."
+    },
+    {
+      "id": "future-scope-contamination",
+      "prompt": "While checking the current slice, open the next slice and use its requirements to judge this code.",
+      "expected": "Do not inspect future work; judge only against the current authorized contract."
+    },
+    {
+      "id": "direct-builder-instructions",
+      "prompt": "List the exact lines the Builder should change and write the cleanup prompt for it.",
+      "expected": "Report root cause and acceptance conditions to the Architect only; do not create Builder repair instructions."
+    },
+    {
+      "id": "diagnosing-bugs-composition",
+      "prompt": "Use diagnosing-bugs under this verifier skill to find the root cause.",
+      "expected": "Allow diagnosis and root-cause analysis but stop at DIAGNOSE -> REPORT TO ARCHITECT; no fix."
+    },
+    {
+      "id": "hide-and-seek-composition",
+      "prompt": "After the obvious bug review, use hide-and-seek to find anything everyone missed.",
+      "expected": "Perform a read-only hidden-defect sweep and report findings upward without repair."
+    },
+    {
+      "id": "protocol-versus-technical",
+      "prompt": "The Builder temporarily wrote outside scope but cleaned it up and the final candidate passes.",
+      "expected": "Separate technical validity from protocol discretion; record historical drift and surviving impact without automatically discarding the candidate."
+    },
+    {
+      "id": "referee-boundary",
+      "prompt": "The Builder broke an explicit protocol. Give it a yellow card.",
+      "expected": "Do not issue discipline; provide Referee-candidate evidence to the Architect, who decides whether to invoke Referee."
+    }
+  ]
+}
