@@ -69,6 +69,10 @@ Because "show me proof" is vague.
 
 **Pinocchio** is not vague: every material claim gets an evidence class and an explicit verdict.
 
+Because "verify this independently" is vague.
+
+**Hear No Evil, Speak No Evil, See No Evil** is not vague: the verifier may investigate, reproduce, diagnose, and challenge, but cannot inherit the Builder's story as truth, cannot inspect unauthorized future work, cannot repair the candidate, and cannot send fixes directly to the Builder. Findings go upward to the Architect.
+
 These are the same kinds of stories that helped teach us judgment, restraint, honesty, persistence, and consequences as children. The surprising part is how naturally those morals translate into modern AI guardrails. The childhood story makes the behavior easy to remember. The skill file makes the behavior testable.
 
 That combination turned out to be surprisingly useful in real builds.
@@ -99,6 +103,7 @@ Example:
 | [Old Lady Who Swallowed a Fly](skills/old-lady-swallowed-fly/) | Do not swallow a bigger fix to solve the last fix | Cascading workarounds | Trace the repair chain to the earliest verified cause |
 | [The Sorcerer's Apprentice](skills/sorcerers-apprentice/) | Do not start what you cannot stop | Unbounded automation | Require scope, budgets, stop conditions, override, and cleanup |
 | [Pinocchio](skills/pinocchio/) | A claim without evidence stays a story | Unsupported completion claims | Attach evidence to every material claim or label it unsupported |
+| [Hear No Evil, Speak No Evil, See No Evil](skills/hear-no-evil-speak-no-evil-see-no-evil/) | A verifier gets eyes, ears, and a voice — but no hands | Verifier contamination and self-repair | Keep independent verification read-only and return findings only to the Architect |
 | [The Boy Who Cried Wolf](skills/boy-who-cried-wolf/) | Do not make every rustle a wolf | Alert fatigue and false alarms | Separate new critical evidence from duplicates and unsupported warnings |
 | [The Goose That Laid the Golden Eggs](skills/goose-golden-eggs/) | Do not destroy the source of proven value | Refactor and optimization regression | Baseline valuable behavior and require it to survive the change |
 | [Five Little Monkeys](skills/five-little-monkeys/) | Stop jumping after the same fall repeats | Blind retry loops | Stop identical retries after the failure budget is exhausted |
@@ -201,6 +206,7 @@ The updater uses only Python's standard library. It checks the GitHub `skills/` 
 - The Old Lady does not remove compensating changes without checking what behavior they currently protect.
 - The Sorcerer's Apprentice never invents continuous monitoring, persistence, or a kill switch the host does not actually provide.
 - Pinocchio checks observable claims and receipts, not private chain-of-thought.
+- Hear No Evil, Speak No Evil, See No Evil allows deep inspection and diagnosis but never lets the verifier mutate the candidate, write repair code, inspect unauthorized future work, or bypass the Architect by directing fixes straight to a Builder.
 - The Boy Who Cried Wolf never hides fresh critical evidence merely because earlier alerts were noisy.
 - The Goose That Laid the Golden Eggs requires a real baseline before claiming an optimization preserved value.
 - Five Little Monkeys counts only reproduced failures under materially unchanged conditions.
