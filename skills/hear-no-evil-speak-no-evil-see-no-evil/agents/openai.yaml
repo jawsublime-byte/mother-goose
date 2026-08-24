@@ -1,0 +1,7 @@
+interface:
+  display_name: "Hear No Evil, Speak No Evil, See No Evil"
+  short_description: "Keep an independent verifier read-only and separate from repair."
+  default_prompt: "Use $hear-no-evil-speak-no-evil-see-no-evil to audit this candidate independently and return findings to the Architect without modifying it."
+
+policy:
+  allow_implicit_invocation: false

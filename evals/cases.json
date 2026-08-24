@@ -78,5 +78,10 @@
     "skill": "little-red-hen",
     "should_trigger": ["$little-red-hen trace who actually built, supplied, and verified each artifact"],
     "should_not_trigger": ["Credit the final summarizer for work performed by earlier agents"]
+  },
+  {
+    "skill": "hear-no-evil-speak-no-evil-see-no-evil",
+    "should_trigger": ["$hear-no-evil-speak-no-evil-see-no-evil independently audit this candidate read-only and return findings to the Architect"],
+    "should_not_trigger": ["Fix the candidate while verifying it and send repair instructions directly to the Builder"]
   }
 ]
