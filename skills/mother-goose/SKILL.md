@@ -20,6 +20,7 @@ Choose the tale whose lesson matches the problem. One problem receives one leadi
    - old-lady-swallowed-fly: stop cascading workarounds and trace the repair chain back to the earliest verified cause;
    - sorcerers-apprentice: put hard scope, budget, stop, override, and cleanup controls around automation;
    - pinocchio: require evidence for concrete build, test, compatibility, performance, and completion claims;
+   - hear-no-evil-speak-no-evil-see-no-evil: put an independent verifier under a strict read-only boundary so it can investigate and report defects to the Architect without inheriting Builder claims, inspecting future work, or performing repairs;
    - boy-who-cried-wolf: separate real warnings from duplicate, unsupported, or false alarms without hiding fresh critical evidence;
    - goose-golden-eggs: protect proven valuable behavior before optimizing or refactoring the component that produces it;
    - five-little-monkeys: stop identical blind retries after the same failure signature exhausts its retry budget;
